@@ -1,0 +1,12 @@
+{
+  "name": "learning-package-management-with-yarn",
+  "version": "1.0.0",
+  "description": "A String reversal library",
+  "main": "index.js",
+  "author": "Isaac Babalola",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "ava": "^2.4.0"
+  }
+}
