@@ -52,9 +52,9 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - test: 
+      - test:
           requires:
-            -build
+            - build
           filters:
             branches:
-              only: master      
+              only: master     
