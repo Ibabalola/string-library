@@ -32,7 +32,7 @@ jobs:
           command: mkdir -p test-results/ava
       - run:
           name: Run tests
-          command: yarn test | npx tap-xunit > test-results/ava/results.xml
+          command: yarn test | npx tap-xunit-circleci > test-results/ava/results.xml
       - run:
           name: Run coverage report
           command: | 
