@@ -1,6 +1,6 @@
 {
- "name": "string-library",
- "version": "1.0.0",
+ "name": "string-library-iobablola",
+ "version": "1.0.2",
  "description": "A String reversal library",
  "main": "index.js",
  "scripts": {
