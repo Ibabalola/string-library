@@ -4,8 +4,9 @@
  "description": "A String reversal library",
  "main": "index.js",
  "scripts": {
-  "test": "ava",
-  "build": "rollup -c"
+  "test": "nyc ava",
+  "build": "rollup -c",
+  "coverage": "nyc report --reporter=lcov --reporter=text-lcov --reporter=html"
  },
  "ava": {
   "require": [
@@ -37,10 +38,13 @@
   "@babel/preset-env": "^7.6.2",
   "@babel/register": "^7.6.2",
   "ava": "2.4.0",
+  "babel-plugin-istanbul": "^5.2.0",
   "esm": "^3.2.25",
+  "nyc": "^14.1.1",
   "rollup": "^1.21.4",
   "rollup-plugin-babel": "^4.3.3",
-  "rollup-watch": "^4.3.1"
+  "rollup-watch": "^4.3.1",
+  "tap-xunit": "^2.4.1"
  },
  "dependencies": {}
 }

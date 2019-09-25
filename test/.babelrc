@@ -1,4 +1,9 @@
 {
+    "env": {
+        "test": {
+            "plugins": ["istanbul"]
+        }
+    },
     "presets": [
         "@ava/babel-preset-stage-4",
         ["@ava/transform-test-files", {"powerAssert": false}],
