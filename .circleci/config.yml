@@ -35,8 +35,8 @@ jobs:
           command: yarn test | npx tap-xunit-circleci > test-results/ava/results.xml
       - run:
           name: Run coverage report
-          command: | 
-            ./cc-test-reporter before-build 
+          command: |
+            ./cc-test-reporter before-build
             yarn run coverage > coverage-report.lcov
             ./cc-test-reporter after-build -d --coverage-input-type lcov --exit-code $?
       - store_artifacts:
